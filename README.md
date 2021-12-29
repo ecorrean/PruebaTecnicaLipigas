@@ -1,11 +1,9 @@
 # PruebaTecnicaLipigas
 Prueba técnica Lipigas - Elias Correa
 
-Ejecutar el siguiente comando antes que todo
-npm install
+Ejecutar el siguiente comando en la terminal antes que todo: npm install
 
-PARA EJECUTAR PROYECTO
-npm start
+EJECUTAR EL SIGUIENTE COMANDO EN LA TERMINAL PARA INICIAR PROYECTO: npm start
 
 EJECUTAR ESTOS COMANDOS EN LA TERMINAL PARA DOCKERIZAR
 
