@@ -1,0 +1,313 @@
+{
+	"info": {
+		"_postman_id": "5e83fc05-32b5-488f-87a2-cd89d1e56520",
+		"name": "LIPIGAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MostrarProductos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA3NDEwZTJiY2ZkYTc0ODI0MWUiLCJpYXQiOjE2NDA3OTIxODAsImV4dCI6MTY0MDc5NTc4MH0.mjYqqnbX5HDh1ELF-TQdTqpAdIn2n1ToDwlHM8pznh8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/api/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Beaver eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Samsung2\",\r\n    \"precio\": \"20000\",\r\n    \"categoria\": \"computador\",\r\n    \"descripcion\": \"Samsung\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostrarProductoxID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/api/producto/61cc80c510e2bcfda7482427",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"producto",
+						"61cc80c510e2bcfda7482427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProductoxID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/api/producto/61cc80c510e2bcfda7482427",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"producto",
+						"61cc80c510e2bcfda7482427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarProductoxID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"precio\": \"350000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/producto/61cc8174bc62605e05565220",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"producto",
+						"61cc8174bc62605e05565220"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"elce.cor@c.cl\",\r\n    \"nombre\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"elc.co\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostrarVentas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Beaver eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostrarVentasxProductoID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Beaver eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/api/ventas/61c9fc9b9dd992cb2d18b253",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"ventas",
+						"61c9fc9b9dd992cb2d18b253"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegistrarVenta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Beaver eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MWNjODA5MjEwZTJiY2ZkYTc0ODI0MjIiLCJpYXQiOjE2NDA3OTIyMTAsImV4dCI6MTY0MDc5NTgxMH0.ySUfTxH7ton-u5IO8IklqJNyAP34OhCZocfR-KRbpMc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productoID\": \"61c9fc9b9dd992cb2d18b253\",\r\n    \"cantidadVendida\": 3,\r\n    \"montoVendido\": 400000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
