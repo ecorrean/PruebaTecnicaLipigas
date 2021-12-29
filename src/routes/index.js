@@ -10,15 +10,15 @@ const api = express.Router()
 
 api.get("/producto", auth , productoController.getTodosProductos)
 api.get("/producto/:productoID", auth, productoController.getProducto)
-api.post("/producto", productoController.guardarProducto)
+api.post("/producto", auth, productoController.guardarProducto)
 api.put("/producto/:productoID",auth, productoController.updateProducto)
 api.delete("/producto/:productoID", auth, productoController.deleteProducto)
 
 api.post("/registrar", usuarioController.registro)
 api.post("/login", usuarioController.autenticacion)
 
-api.get("/ventas", ventasController.getVentasTodas)
-api.get("/ventas/:productoID", ventasController.getVentas)
-api.post("/ventas", ventasController.guardarVentas)
+api.get("/ventas", auth, ventasController.getVentasTodas)
+api.get("/ventas/:productoID", auth, ventasController.getVentas)
+api.post("/ventas", auth, ventasController.guardarVentas)
 
 module.exports = api
